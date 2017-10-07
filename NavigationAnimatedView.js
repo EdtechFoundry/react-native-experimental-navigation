@@ -18,6 +18,7 @@ const NavigationScenesReducer = require('./NavigationScenesReducer');
 const React = require('react');
 const StyleSheet = require('react-native').StyleSheet;
 const View = require('react-native').View;
+const PropTypes = require('prop-types');
 
 import type {
   NavigationActionCaller,
@@ -43,8 +44,6 @@ type State = {
   position: NavigationAnimatedValue,
   scenes: Array<NavigationScene>,
 };
-
-const {PropTypes} = React;
 
 function applyDefaultAnimation(
   position: NavigationAnimatedValue,
