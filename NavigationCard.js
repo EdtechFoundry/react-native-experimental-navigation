@@ -44,6 +44,7 @@ const React = require('react');
 const ReactComponentWithPureRenderMixin = require('react-addons-pure-render-mixin');
 const StyleSheet = require('react-native').StyleSheet;
 const View = require('react-native').View;
+const PropTypes = require('prop-types');
 
 import type  {
   NavigationPanPanHandlers,
@@ -63,8 +64,6 @@ type Props = NavigationSceneRendererProps & {
   renderScene: NavigationSceneRenderer,
   style: any,
 };
-
-const {PropTypes} = React;
 
 class SceneView extends React.Component<any, SceneViewProps, any> {
 

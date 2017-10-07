@@ -40,6 +40,7 @@ const NavigationHeaderBackButton = require('./NavigationHeaderBackButton');
 const NavigationPropTypes = require('./NavigationPropTypes');
 const NavigationHeaderStyleInterpolator = require('./NavigationHeaderStyleInterpolator');
 const ReactComponentWithPureRenderMixin = require('react-addons-pure-render-mixin');
+const PropTypes = require('prop-types');
 
 const {
   Animated,
@@ -72,7 +73,6 @@ type SubViewName = 'left' | 'title' | 'right';
 
 const APPBAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : 0;
-const {PropTypes} = React;
 
 class NavigationHeader extends React.Component<DefaultProps, Props, any> {
   props: Props;

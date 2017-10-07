@@ -17,6 +17,7 @@ const NavigationPropTypes = require('./NavigationPropTypes');
 const NavigationStateUtils = require('./NavigationStateUtils');
 const Platform = require('react-native').Platform;
 const React = require('react');
+const PropTypes = require('prop-types');
 
 import type {
   NavigationAction,
@@ -70,8 +71,6 @@ type State = {
 function getBackAction(): BackAction {
   return { type: 'BackAction' };
 }
-
-const {PropTypes} = React;
 
 class NavigationRootContainer extends React.Component<any, Props, State> {
   _handleOpenURLEvent: Function;

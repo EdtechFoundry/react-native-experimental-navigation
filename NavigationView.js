@@ -18,6 +18,7 @@ const StyleSheet = require('react-native').StyleSheet;
 const View = require('react-native').View;
 const NavigationScenesReducer = require('./NavigationScenesReducer');
 const ReactComponentWithPureRenderMixin = require('react-addons-pure-render-mixin');
+const PropTypes = require('prop-types');
 
 import type {
   NavigationActionCaller,
@@ -40,8 +41,6 @@ type State = {
   layout: NavigationLayout,
   scenes: Array<NavigationScene>,
 };
-
-const {PropTypes} = React;
 
 /**
  * A simple view that will render a scene for the currently focused sub-state.

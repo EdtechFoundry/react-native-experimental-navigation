@@ -41,10 +41,10 @@ const NavigationPropTypes = require('./NavigationPropTypes');
 const React = require('react');
 const ReactComponentWithPureRenderMixin = require('react-addons-pure-render-mixin');
 const StyleSheet = require('react-native').StyleSheet;
+const PropTypes = require('prop-types');
 
 const emptyFunction = require('fbjs/lib/emptyFunction');
 
-const {PropTypes} = React;
 const {Directions} = NavigationCardStackPanResponder;
 
 import type {
